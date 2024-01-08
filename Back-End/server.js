@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from 'dotenv';
 import db from './models/index.js';
 import ProductRoute from './routes/ProductRoute.js';
+import AuthRoute from './routes/AuthRoute.js'
 import cookieParser from "cookie-parser";
 import cors from 'cors';
 
@@ -13,7 +14,8 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
-app.use('/product',ProductRoute)
+app.use('/product',ProductRoute);
+app.use('/auth', AuthRoute);
 app.listen(port, async () => {
     console.log(`SERVER IS RUNNING ON PORT ${port}`);
     try {
