@@ -20,7 +20,7 @@ Build a web application using React, semantic HTML, and module CSS/MUI (you can 
 
 2. **Products Display Page**:
 
-   - Display all the products as cards in one page.
+   - Display all the products as cards in one page.c  
 
 3. **Product Dashboard Page**:
 
