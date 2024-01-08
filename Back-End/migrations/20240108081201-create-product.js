@@ -23,7 +23,7 @@ module.exports = {
       },
       price: {
         type: Sequelize.INTEGER,
-        allowNull: false
+        allowNull: false,
       },
       supplier: {
         type: Sequelize.STRING,
